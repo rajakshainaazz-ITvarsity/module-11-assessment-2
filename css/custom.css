@@ -1,0 +1,146 @@
+/************************************/
+/*             defaults             */
+/************************************/
+
+html {
+  font-size: 14px;
+  background-image: url("../img/background4.gif");
+  background-size: auto;
+}
+
+body{
+  background: transparent;
+}
+
+.container{
+  max-width: 960px;
+}
+
+
+/************************************/
+/*             header               */
+/************************************/
+
+a{
+  text-decoration: none !important;
+}
+
+.blog-header{
+  margin-top: 10rem;
+  max-width: 700px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.team{
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.d-flex.flex-column.align-items-center.fixed-top{
+  transition-duration: 250ms;
+}
+
+/************************************/
+/*              cards               */
+/************************************/
+
+.card{
+  --bs-card-spacer-y: 0;
+  --bs-card-spacer-x: 0;
+  --bs-card-inner-border-radius: 0;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.card-deck .card{
+  min-width: 220px;
+}
+
+.card-text{
+  padding: 1rem 1rem 0 1rem;
+}
+
+.card-block{
+  min-height: 220px;
+}
+
+.active{
+  background-color: rgb(248, 84, 84);
+  border-radius: 25px;
+  padding-top: 0!important;
+  padding-bottom: 0.05rem!important;
+  transition-duration: 200ms;
+}
+
+.card-header h4,
+p.card-text{
+  text-align: center;
+}
+
+.d-flex.justify-content-between.align-items-center{
+  margin: 0 1rem 1rem 1rem;
+}
+
+
+/************************************/
+/*             buttons              */
+/************************************/
+
+.btn-lg.btn-link[type="button"]{
+  border: 0px;
+  background-color: rgba(255,255,255,0);
+}
+
+.far.fa-heart,
+.far.fa-comment,
+.fa.fa-retweet{
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 50%;;
+}
+
+.far.fa-heart{
+  background-color: rgb(240, 131, 131);
+}
+
+.far.fa-comment{
+  background-color: rgb(107, 187, 233);
+}
+
+.fa.fa-retweet{
+  background-color: rgb(240, 103, 176);
+}
+
+
+/************************************/
+/*          responsive css          */
+/************************************/
+
+@media (min-width: 768px) {
+  html {
+     font-size: 16px;
+  }
+}
+@media (max-width: 768px){
+  .blog-header{
+    margin: 10rem 1.5rem 0 1.5rem;
+  }
+  p.lead{
+    margin: 0 1rem 1.1rem 1rem;
+  }
+}
+
+@media (max-width: 400px){
+  .d-flex.justify-content-between.align-items-center{
+    display: block !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  div.btn-group{
+    display: block;
+    margin-bottom: 14px;
+  }
+}

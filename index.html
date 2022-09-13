@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>Food Blogger</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontAwesome/css/all.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+</head>
+
+<body onload="init()">
+    <div class="d-flex flex-column align-items-center p-3 bg-white border-bottom box-shadow fixed-top">
+        <img src="img/mini-blog-logo.png" height="80">
+        <nav>
+            <a id="getLatest" class="p-2 text-dark" href="#">Latest</a>
+            <a id="getAll" class="p-2 text-dark active" href="#">All</a>
+            <a id="getPopular" class="p-2 text-dark" href="#">Popular</a>
+        </nav>
+    </div>
+
+    <div class="blog-header mx-auto text-center">
+        <h1>FoodieFanatix Community</h1>
+        <p class="lead">We bring you the <strong><em>Freshest Food Fads</em></strong> from around the world.</p>
+    </div>
+
+    <div class="container team">
+        <img src="img/thandi.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/john.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/sally.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/lungi.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/bob.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/dave.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/andile.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/lee.jpg" class="img-thumbnail rounded-circle" width="90">
+    </div>
+
+    <div class="row container mx-auto">
+        <div class="column card-deck text-center" id="posts">
+            Preparing your order...
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cutsom.js"></script>
+    
+</body>
+</html>
